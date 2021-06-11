@@ -29,18 +29,17 @@ app.use(express.static(publicFiles))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather App',
-        summary: 'Use this App to get Weather Information',
-        createdBy: 'Krishna',
+        title: 'Sahakara-Digital-Farms',
+        summary: 'This Page outlines the information about what we do',
+        createdBy: 'Sahakara-Digital-Farms.Inc',
         Version: '1.0'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        role: 'About this app',
-        summary: 'Provides the weather information',
-        createdBy: 'Krishna',
+        role: 'About Us',
+        createdBy: 'Sahakara-Digital-Farms.Inc',
         Version: '1.0'
     })
 })
